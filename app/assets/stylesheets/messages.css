@@ -18,12 +18,43 @@
 .side-bar__head{
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-bar__head-left a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.side-bar__head-right{
+  border: 1px solid lightblue;
+  padding: 14px;
+}
+
+.side-bar__head-right a{
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
 }
 
 .side-bar__foot{
   height: calc( 100% - 100px);
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.side-bar__foot-room{
+  margin: 20px 0  40px 0;
+}
+
+.side-bar__foot-room a{
+  color: white;
+  text-decoration: none;
 }
 
 /* =================
