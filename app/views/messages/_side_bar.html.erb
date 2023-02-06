@@ -3,56 +3,13 @@
       <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="side-bar__head-right">
-    <a href="#">チャットを作成する</a>
+    <%= link_to 'チャットを作成する', new_room_path %>
   </div>
 </div>
 <div class="side-bar__foot">
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
-  <div class="side-bar__foot-room">
-    <a href="#">techroom1</a>
-  </div>
+  <% current_user.rooms.each do |room| %>
+    <div class="side-bar__foot-room">
+      <a href="#"><%= room.name %></a>
+    </div>
+  <% end %>
 </div>
