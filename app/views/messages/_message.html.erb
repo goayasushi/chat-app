@@ -1,0 +1,48 @@
+<%# ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ %>
+<%# ↓自身で定義したメインチャットのクラスの記載 %>
+    <%# <div class="chat__chat">
+      <div class="chat__chat-head">
+        <div class="chat__chat-name">
+          Tom
+        </div>
+        <div class="chat__chat-date">
+          2020/3/31(Wed) 12:43:30
+        </div>
+      </div>
+      <div class="chat__chat-content">
+        おはよう
+      </div>
+    </div>
+    <div class="chat__chat">
+      <div class="chat__chat-head">
+        <div class="chat__chat-name">
+          Tom
+        </div>
+        <div class="chat__chat-date">
+          2020/3/31(Wed) 12:43:30
+        </div>
+      </div>
+      <div class="chat__chat-content">
+        おはよう
+      </div>
+    </div> %>
+<%# ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ %>
+
+<div class="chat__chat">
+  <div class="chat__chat-head">
+    <div class="chat__chat-name">
+      <!-- 投稿したユーザー名情報を出力する -->
+      <%= message.user.name %>
+    </div>
+    <div class="chat__chat-date">
+      <!-- 投稿した時刻を出力する -->
+      <%= l message.created_at %>
+    </div>
+  </div>
+  <div class="chat__chat-foot">
+    <div class="chat__chat-content">
+      <!-- 投稿したメッセージ内容を記述する -->
+      <%= message.content %>
+    </div>
+  </div>
+</div>
